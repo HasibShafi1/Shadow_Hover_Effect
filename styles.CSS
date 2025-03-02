@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+}
+
+.hover-text {
+    font-size: 180px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3); /* Always visible outline */
+    position: relative;
+    
+    /* Text Outline */
+    -webkit-text-stroke: 2px rgba(255, 255, 255, 0.5);
+
+    /* Smooth transition for the glow effect */
+    transition: text-shadow 0.1s ease-in-out;
+}
